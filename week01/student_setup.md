@@ -2,7 +2,7 @@
 
 - GitHub username: `BenYas64`
 - Fork URL: `https://github.com/BenYas64/is4010-labs`
-- Local clone verified: `yes-or-no`
+- Local clone verified: `yes`
 - uv version: `0.12.6`
 - Python version: `3.12.7`
 
