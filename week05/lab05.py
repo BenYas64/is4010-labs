@@ -15,6 +15,6 @@ def get_active_user_emails(users):
     """Return email addresses belonging to active users."""
     active_emails = []
     for user in users:
-        if user.get("active") and "email" in user:
+        if user.get("is_active") and "email" in user:
             active_emails.append(user["email"])
     return active_emails
