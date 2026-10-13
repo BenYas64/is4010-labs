@@ -1,0 +1,24 @@
+def find_common_elements(list1, list2):
+    """Return a list of values present in both input lists."""
+    common_elements = []
+    for element in list1:
+        if element in list2 and element not in common_elements:
+            common_elements.append(element)
+    return common_elements
+
+
+def find_user_by_name(users, name):
+    """Return the matching user dictionary, or None when no user matches."""
+    for user in users:
+        if user["name"] == name:
+            return user
+    return None
+
+
+def get_list_of_even_numbers(numbers):
+    """Return the even integers in their original order."""
+    even_numbers = []
+    for i in numbers:
+        if i % 2 == 0:
+            even_numbers.append(i)
+    return even_numbers
