@@ -24,7 +24,7 @@ def count_vowels(text: str) -> int:
     """Count the letters a, e, i, o, and u in text, ignoring case."""
     return sum(char.lower() in "aeiou" for char in text)
 
-It lowercased each character inside the loop rather than converting the whole string once
+It lowercased each character inside the loop rather than converting the whole string once. It returned four lines with no explanation, no worked examples, no mention of what it assumed.
 
 
 ### Antigravity CLI observations
@@ -34,15 +34,16 @@ It lowercased each character inside the loop rather than converting the whole st
         vowels = set("aeiou")
         return sum(1 for char in text.lower() if char in vowels)
 
+It converted the entire string to lowercase before counting vowels, rather than lowercasing each character individually. It used a set to check for vowels and included a clear description of what the function does. It also provided an explanation and worked examples, making the code easier to understand.
 
 ### Comparison
 
-Both Antigravity and Copilot gave correct answers. Antigravity explained the code better and gave examples, while Copilot kept the code shorter and simpler. Copilot’s description did not mention that y should not be counted. Both solutions work well. I ended up using Antigravities anwser.
+Antigravity read test_lab02.py and the existing lab02.py before answering, while Copilot did not. Both responses provided correct solutions to the prompt. Antigravity explained the code better and included examples, while Copilot kept the code shorter and simpler. Copilot’s description did not mention that y should not be counted, even though its code handled it correctly. I chose Antigravity’s answer because it was easier to understand and explained how the function worked. Testing both versions under the same conditions matters because it helps determine whether each solution meets the requirements and makes the comparison fairer and more reliable.
 
 ## Test-guided implementation
 
-I checked that the function counts a, e, i, o, and u correctly, including uppercase letters. Both versions passed these checks. I kept the code simple and kept the description clearly explaining what the function does. The final code follows the instructions and returns the correct number of vowels in a string. 
+The nine Python tests passed on the first run using Antigravity’s code. However, the journal tests failed because the required sections did not fully meet the assignment rules. The tests first flagged placeholder markers that had not been replaced, then a missing code fence around the code, and later word counts that were too short in individual sections. I used each failure to identify what needed fixing and revised the journal accordingly. I also learned that git diff does not show untracked files, which explained why it showed nothing before the first commit. These checks helped me meet the assignment requirements.
 
 ## Preferred tool combination
 
-A browser chat is useful for explanations. Copilot CLI is helpful for working in the terminal. Antigravity can inspect files and provide more detailed explanations. I currently prefer using a browser chat for simple tasks and a CLI tool for working with project files. But my favorite method is using a tool in VS Code so it can edit the code dirrectly like GitHub Copilot or Claude. I have been using cluade for my previous projects in VS Code. 
+A browser chat is useful for explanations. Copilot CLI is helpful for working in the terminal. Antigravity can inspect files and provide more detailed explanations. I currently prefer using a browser chat for simple tasks and a CLI tool for working with project files. But my favorite method is using a tool in VS Code so it can edit the code dirrectly like GitHub Copilot or Claude. I have been using Claude for my previous projects in VS Code, and I like how it helps me write, debug, and improve my code without constantly switching between applications. Makes it a lot cleaner.
