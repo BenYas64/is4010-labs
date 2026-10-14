@@ -42,7 +42,7 @@ Antigravity read test_lab02.py and the existing lab02.py before answering, while
 
 ## Test-guided implementation
 
-The nine Python tests passed on the first run using Antigravity’s code. However, the journal tests failed because the required sections did not fully meet the assignment rules. The tests first flagged placeholder markers that had not been replaced, then a missing code fence around the code, and later word counts that were too short in individual sections. I used each failure to identify what needed fixing and revised the journal accordingly. I also learned that git diff does not show untracked files, which explained why it showed nothing before the first commit. These checks helped me meet the assignment requirements.
+The nine Python tests passed on the first run using Antigravity’s code. However, the journal tests failed because the required sections did not fully meet the assignment rules. The tests first flagged placeholder markers that had not been replaced, then a missing code fence around the code, and later word counts that were too short in individual sections. I used each failure to identify what needed fixing and revised the journal accordingly. I also learned that git diff does not show untracked files, which explained why it showed nothing before the first commit. These checks made sure they were working properly.
 
 ## Preferred tool combination
 
